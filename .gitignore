@@ -1,4 +1,7 @@
-# Created by https://www.gitignore.io/api/java,linux,macos,windows
+etc/example.com*
+etc/exampleca*
+
+# Created by https://www.gitignore.io/api/osx,sbt,java,scala,linux,windows
 
 ### Java ###
 # Compiled class file
@@ -39,7 +42,7 @@ hs_err_pid*
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-### macOS ###
+### OSX ###
 *.DS_Store
 .AppleDouble
 .LSOverride
@@ -66,6 +69,22 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### SBT ###
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+
+### Scala ###
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -87,5 +106,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-
-# End of https://www.gitignore.io/api/java,linux,macos,windows
+# End of https://www.gitignore.io/api/osx,sbt,java,scala,linux,windows
